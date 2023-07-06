@@ -1,0 +1,39 @@
+// create two string variables
+let student1 = "Martha";
+let student2 = "Job";
+// create two number variables
+let years = 3;
+let documentName = 1;
+// use concatination of a string
+let dogName = "sky";
+let nationality = "Kenyan";
+console.log(dogName + " " + nationality);
+
+// use ecape characters
+console.log(dogName + "\n" + "\t" + nationality);
+// 5.a create three object with three properties
+// one should be a constant, one is not a constant, another is constant frozen object
+// b. add two properties to a constant
+// 5.c delete one property from each of them
+
+let father = { name: "john", age: 22, class: "year two" };
+const mother = { name: "martha", age: 23, class: "year three" };
+const child = Object.freeze({ name: "Luke", age: 17 });
+mother.weight = "55kg";
+console.log(mother);
+mother["height"] = "155 cm";
+console.log(mother);
+
+child.weight = "25kg";
+console.log(child);
+child["height"] = "99cm";
+console.log(child);
+
+console.log(delete father.class);
+
+console.log(delete mother.class);
+
+console.log(delete child.age);
+console.log(mother);
+console.log(father);
+console.log(child);
